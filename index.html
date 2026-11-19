@@ -1,78 +1,216 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="Nancy Jiang is a journalist covering race, ethnicity, data and New York City. Explore selected reporting, audio and video work.">
+	<title>Nancy Jiang | Journalist</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<main class="page">
+		<header class="intro" id="top">
+			<div class="intro-copy">
+				<h1>Nancy Jiang</h1>
+				<p class="intro-lede">Reporter and data journalist</p>
+				<p>I'm a reporter at The Associated Press covering race and ethnicity. My work has appeared in The City Reporter, CalMatters, Billboard Magazine, Forbes, and NYCity News Service. I've reported on housing, social services, education, culture, and economics.</p>
+				<p>I studied journalism, international relations, political science, and Korean at Boston University and graduated from the Craig Newmark Graduate School of Journalism.</p>
+				<nav class="intro-links" aria-label="Contact and social links">
+					<a href="mailto:njiang@ap.org">Email</a>
+					<a href="https://www.linkedin.com/in/jiang-nancy/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+					<span>Signal tips: nancyjiang[dot]60</span>
+				</nav>
+			</div>
+			<figure class="portrait">
+				<button class="portrait-toggle" type="button" aria-label="Toggle between film photo and headshot" aria-pressed="false">
+					<img class="portrait-film" src="images/nancy.jpg" alt="" aria-hidden="true" width="300" height="300">
+					<img class="portrait-headshot" src="images/Jiang_Nancy.JPG" alt="" aria-hidden="true" width="300" height="300">
+				</button>
+				<figcaption class="portrait-caption">
+					<span class="portrait-caption-film">I prefer film photography!</span>
+					<span class="portrait-caption-headshot">More serious one that convinces you I'm smart and competent, in digital</span>
+				</figcaption>
+			</figure>
+		</header>
 
-<div class="container">
-	<h1> About Me </h1>
+		<nav class="work-tabs" role="tablist" aria-label="Portfolio sections">
+			<button class="work-tab" id="tab-reporting" type="button" role="tab" aria-selected="true" aria-controls="panel-reporting">Reporting</button>
+			<button class="work-tab" id="tab-audio" type="button" role="tab" aria-selected="false" aria-controls="panel-audio" tabindex="-1">Audio</button>
+			<button class="work-tab" id="tab-video" type="button" role="tab" aria-selected="false" aria-controls="panel-video" tabindex="-1">Video</button>
+		</nav>
 
-	<p> I'm a graduate student at the Craig Newmark School of Journalism based in New York. </P>
-
-	<p> I am currently a reporter at The Associated Press covering race and ethnicity, as well as a data reporter at CalMatters. You can find my writing in The City Reporter, Forbes, and NYCity News Service, where I've covered housing, social services, education, and economics in New York City. </p>
-
-	<p> I graduated from Boston University in 2022 with a B.S. in Journalism and minor in Political Science. While at BU, I was the community editor of The Daily Free Press and wrote for various music outlets, including HotNewHipHop, as well as started a music column for the school. </p>
-
-	<p> Post-grad I was the editor-in-chief of formerly prominent music site KpopStarz, and occasionally, I still do music journalism, including on a freelance basis for Billboard magazine.</p>
-
-	<p> I was born in the Lower East Side and grew up in the heart of Flushing, Queens. I am a student and product of the most diverse borough in the country. </p>
-
-	<h1> Reporting </h1>
-		<p> Selection of my data reporting: </p>
-		<ul>
-			<li> <a href="https://www.thecityreporter.nyc/2026/08/17/k-shaped-economy-new-york-wealthy-medicaid-housing-wages/">Inside NYC’s K-Shaped Economy: A Few Do Well, Most Do Not </a href> - The City Reporter
-			<li><a href="https://www.thecityreporter.nyc/2026/07/07/black-unemployment-work-jobs-career-layoffs/">Black Unemployment in NYC Still Tops Nation Amid Competition, DEI Retreat </a href> - The City Reporter 
-			<li><a href="https://nancyjiang10.github.io/tech-economy/">The Tech Job Market Is Hard Now, Especially For Recent Grads </a href> - NY City News Service 
-			<li><a href="https://www.thecityreporter.nyc/2026/06/22/heres-what-nyc-early-voting-numbers-show/">Here's What NYC Early Voting Numbers Show </a href> - The City Reporter
-		</ul>
-		
-	<p> Selection of my reporting: </p>
-		<ul>
-			<li><a href="https://www.thecityreporter.nyc/2026/06/22/greenwood-sunset-park-homeless-shelter-lawsuit/">Brooklynites Sue Over Shelter Burden as City Hall Vows for ‘Fair Share’ Everywhere </a href> - The City Reporter
-			<li><a href="https://www.thecityreporter.nyc/2026/06/05/as-knicks-forge-ahead-in-nba-finals-savvy-new-yorkers-hawk-merch-near-msg/">As Knicks Forge Ahead in NBA Finals, Savvy New Yorkers Hawk Merch Near MSG </a href> - The City Reporter
-
-		</ul>
-
-		<p> More Economics: </p>
-			<ul>
-			<li> <a href="https://www.forbes.com/advisor/d/how-big-beautiful-bill-impacts-student-loans/">It’s About To Get Harder To Pay Off Your Student Loans, Here’s What Changed </a href> — Forbes Advisor
-			<li> <a href="https://www.forbes.com/advisor/d/big-beautiful-bill-ev-tax-credit-cuts-how-to-save/">The Big Beautiful Bill Cuts EV Tax Breaks </a href> — Forbes Advisor
-			<li> <a href="https://www.forbes.com/advisor/d/copper-tariffs-could-mean-price-hikes-energy-cars-electronics/">New Copper Tariffs Could Mean Price Hikes For Energy Bills, Cars And Electronics</a href> — Forbes Advisor
-			<li> <a href="https://www.forbes.com/advisor/d/canada-tariffs-hit-drivers-cut-car-expenses/">Canada Tariffs Could Hit Drivers Hard</a href> — Forbes Advisor
-			<li><a href="https://www.forbes.com/advisor/d/trump-administration-claws-back-energy-grants-how-to-save/">The Trump Administration Looks To Claw Back $7 Billion In Energy Grants</a href> — Forbes Advisor
-			</ul>
+		<section class="tab-panel" id="panel-reporting" role="tabpanel" aria-labelledby="tab-reporting" tabindex="0">
+			<div class="section-heading">
+				<p class="eyebrow">Data Reporting</p>
+			</div>
+			<div class="data-clip-list">
+				<article class="data-clip">
+					<figure class="viz-frame" id="viz-k-shaped" aria-label="Visualization for Inside NYC’s K-Shaped Economy">
+						<img src="images/k-shaped.png" alt="Measures of distress reached a record high in 2026, with the number of New Yorkers receiving Medicaid and SNAP benefits increasing while wages and housing costs have stagnated.">
+					</figure>
+					<div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/08/17/k-shaped-economy-new-york-wealthy-medicaid-housing-wages/" target="_blank" rel="noopener noreferrer">Inside NYC’s K-Shaped Economy: A Few Do Well, Most Do Not</a></h3></div>
+				</article>
+				<article class="data-clip">
+					<figure class="viz-frame" id="viz-black-unemployment" aria-label="Visualization for Black Unemployment in NYC">
+						<img src="images/black-unemployment.png" alt="Chart showing sectors contributing to Black employment have seen more losses than gains in 2026">
+					</figure>
+					<div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/07/07/black-unemployment-work-jobs-career-layoffs/" target="_blank" rel="noopener noreferrer">Black Unemployment in NYC Still Tops Nation Amid Competition, DEI Retreat</a></h3></div>
+				</article>
+				<article class="data-clip">
+					<figure class="viz-frame" id="viz-tech-jobs" aria-label="Unemployment Rates for Recent Grads Overtakes the National Rate">
+						<img src="images/tech-unemployment.png" alt="Chart comparing unemployment rates for recent graduates, young workers, college graduates, and all workers">
+					</figure>
+					<div class="clip-copy"><p class="outlet">Personal project</p><h3><a href="https://nancyjiang10.github.io/tech-economy/" target="_blank" rel="noopener noreferrer">The Tech Job Market Is Hard Now, Especially For Recent Grads</a></h3></div>
+				</article>
+				<article class="data-clip">
+					<figure class="viz-frame" id="viz-early-voting" aria-label="Visualization for NYC Early Voting Numbers">
+						<img src="images/election-polls.png" alt="Line chart of early voting by age group from June 13 to June 21">
+					</figure>
+					<div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/06/22/heres-what-nyc-early-voting-numbers-show/" target="_blank" rel="noopener noreferrer">Here's What NYC Early Voting Numbers Show</a></h3></div>
+				</article>
+			<article class="data-clip">
+					<figure class="viz-frame" id="viz-rodents">
+						<img src="images/rodents.png" alt="Chart of rodent activity inspections in the East Village by month from 2020 to 2025">
+					</figure>
+					<div class="clip-copy"><p class="outlet">Personal project</p><h3><a href="https://nancyjiang10.github.io/chart-project/" target="_blank" rel="noopener noreferrer">Trash Laws Reduce Rodent Activity in the East Village</a></h3></div>
+				</article>
+			<article class="data-clip">
+					<figure class="viz-frame" id="viz-rodents">
+						<img src="images/litter-baskets.png" alt="All the litter baskets in New York City on an interactive map">
+					</figure>
+					<div class="clip-copy"><p class="outlet">Personal project</p><h3><a href="https://nancyjiang10.github.io/interactive-map-1/" target="_blank" rel="noopener noreferrer">Interactive Map of Litter Baskets in New York City</a></h3></div>
+				</article>
+			<article class="data-clip">
+					<figure class="viz-frame" id="viz-rodents">
+						<img src="images/housing-lottery.png" alt="Total number of affordable housing units available according to income bracket">
+					</figure>
+					<div class="clip-copy"><p class="outlet">Personal project</p><h3><a href="https://nancyjiang10.github.io/mapproject/" target="_blank" rel="noopener noreferrer">Brooklyn, Queens, and the Bronx Grow Increasingly Gentrified As Mamdani Prepares to Deliver on Housing Agenda</a></h3></div>
+				</article>
+			</div>
 	
-
 			
-	<h1> Audio </h1>
-		<p> A selection of my audio reporting and production pieces: </p>
-		<ul> 
-			<li>Executively produced <a href="https://on.soundcloud.com/Bxi1Xk08QRYwkXq4kl"> newscast </a href> for Craig Newmark's live radio 
-			<li> <a href="https://on.soundcloud.com/2SlN4n6HA0f6cqnMJK"> Rideshare drivers rally for protections against firings without cause </a href>
-			<li> <a href="https://on.soundcloud.com/xHCDUwtuRZjl0L4shB"> Mahjong's Revival: Green Tile Social Club </a href>
-		</ul>
-	<h1> Video </h1>
-	<ul>
-		<li>Reel: <a href="https://www.instagram.com/reel/DZvJC2Bx41t/"> Williamsburg Music Center</a href> — The City Reporter
-		<li>Reel: <a href="https://www.instagram.com/reel/DSJWI9Ujb9S/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Starbucks workers go on strike</a href>
-		</ul>
+		
+			<div class="reporting-content">
+			</linebreak>
+					<div class="section-heading"><p class="eyebrow">Culture</p></div>
+						<div class="data-clip-list">
+							<article class="data-clip">
+								<figure class="viz-frame"><img src="images/singsing.png" alt="Incarcerated men and visitors gather inside a chapel at Sing Sing prison"></figure>
+								<div class="clip-copy"><p class="outlet">Associated Press</p><h3><a href="https://apnews.com/article/crime-punishment-pbs-documentary-sing-sing-prison-5f3f3e1f7419a500f8531d4278cb30fc" target="_blank" rel="noopener noreferrer">At Sing Sing prison, incarcerated men get preview of new PBS documentary on nation’s justice system</a></h3></div>
+							</article>
+							<article class="data-clip">
+								<figure class="viz-frame"><img src="images/black-church.png" alt="A man in historical dress exits a reconstructed church during a ceremony"></figure>
+								<div class="clip-copy"><p class="outlet">Associated Press</p><h3><a href="https://apnews.com/article/virginia-oldest-black-church-america-slavery-9b94181371f5339e2c98a5fc90bc4d72" target="_blank" rel="noopener noreferrer">Congregants celebrate the reconstruction of one of America’s oldest Black churches</a></h3></div>
+							</article>
+							<article class="data-clip">
+								<figure class="viz-frame"><img src="images/haiti.png" alt="Haitian community members celebrate in a street parade"></figure>
+								<div class="clip-copy"><p class="outlet">Associated Press</p><h3><a href="https://apnews.com/article/west-indian-american-day-parade-haitians-6cbc0a9c715dbef60277a0db1938b21a" target="_blank" rel="noopener noreferrer">For New York’s Haitian community, annual West Indian Day Parade means more in trying times</a></h3></div>
+							</article>
+							<article class="data-clip">
+								<figure class="viz-frame"><img src="images/asian-polls.png" alt="Chinese Americans rally with signs supporting Donald Trump"></figure>
+								<div class="clip-copy"><p class="outlet">Associated Press</p><h3><a href="https://apnews.com/article/aapi-asian-american-midterm-elections-trump-democrats-republicans-b05ea8497a7fab3ea3e83913ffeea9c8" target="_blank" rel="noopener noreferrer">Democrats gain ground with AAPI adults as trust in Republicans fades, AP-NORC/AAPI Data poll finds</a></h3></div>
+							</article>
+							<article class="data-clip">
+								<figure class="viz-frame"><img src="images/bard.png" alt="Portrait of writer Ralph Ellison"></figure>
+								<div class="clip-copy"><p class="outlet">Associated Press</p><h3><a href="https://apnews.com/article/ralph-ellison-center-trust-bard-college-89b92416af1e91cdfa39e8191dbdf7d1" target="_blank" rel="noopener noreferrer">Black literary luminary Ralph Ellison’s works have a new home at Bard College</a></h3></div>
+							</article>
+						
+					</div>
+				<div class="more-reporting-content">
+					<div class="section-heading"><p class="eyebrow">New York City</p></div>
+					<div class="data-clip-list clip-list">
+						<article class="data-clip"><figure class="viz-frame"><img src="images/shsat.png" alt="Two Stuyvesant High School students stand for a portrait"></figure><div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/08/10/stuyvesant-high-school-tutoring-shsat-exam-mamdani/" target="_blank" rel="noopener noreferrer">Do You Know About the SHSAT? The Teens of Stuy Prep Want to Make Sure.</a></h3></div></article>
+						<article class="data-clip"><figure class="viz-frame"><img src="images/shelter.png" alt="Exterior of an apartment building in Sunset Park"></figure><div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/06/22/greenwood-sunset-park-homeless-shelter-lawsuit/" target="_blank" rel="noopener noreferrer">Brooklynites Sue Over Shelter Burden as City Hall Vows for ‘Fair Share’ Everywhere</a></h3></div></article>
+						<article class="data-clip"><figure class="viz-frame"><img src="images/knicks.png" alt="A Knicks fan poses beside merchandise outside Madison Square Garden"></figure><div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/06/05/as-knicks-forge-ahead-in-nba-finals-savvy-new-yorkers-hawk-merch-near-msg/" target="_blank" rel="noopener noreferrer">As Knicks Forge Ahead in NBA Finals, Savvy New Yorkers Hawk Merch Near MSG</a></h3></div></article>
+						<article class="data-clip"><figure class="viz-frame"><img src="images/foreclosures.png" alt="Brick homes in the Bronx"></figure><div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/08/05/bronx-foreclosures-home-lien-debt/" target="_blank" rel="noopener noreferrer">Bronx Foreclosures Have Doubled. Experts Say Many More Are Coming.</a></h3></div></article>
+						<article class="data-clip"><figure class="viz-frame"><img src="images/red-hook.png" alt="Sol Goldman Recreation Center and Pool in Red Hook Park"></figure><div class="clip-copy"><p class="outlet">The City Reporter</p><h3><a href="https://www.thecityreporter.nyc/2026/07/10/red-hook-pool-parks-martin-maher/" target="_blank" rel="noopener noreferrer">Red Hook Pool Fails to Surface, Again</a></h3></div></article>
+						
+					</div>
+					<div class="section-heading"><p class="eyebrow">Business</p></div>
+					<div class="data-clip-list clip-list">
+						<article class="data-clip"><figure class="viz-frame"><img src="images/united.jpg" alt="United Airlines passenger jets on the tarmac"></figure><div class="clip-copy"><p class="outlet">Times Square Investment Journal</p><h3><a href="https://tsijournal.com/2026/10/15/united-airlines-coasts-past-wall-street-estimates-as-jet-fuel-prices-rise/" target="_blank" rel="noopener noreferrer">United Airlines Coasts Past Wall Street Estimates As Jet Fuel Prices Rise</a></h3></div></article>
+						<article class="data-clip"><figure class="viz-frame"><img src="images/times.jpg" alt="The New York Times headquarters"></figure><div class="clip-copy"><p class="outlet">Times Square Investment Journal</p><h3><a href="https://tsijournal.com/2026/10/05/new-york-times-goes-all-in-on-video/" target="_blank" rel="noopener noreferrer">The New York Times Goes All-In On Video</a></h3></div></article>
+				</div>
+			</details>
+		</section>
 
-	<h1> Contact Me </h1>
-	<p> Reach me via email at njiang@ap.org. For tips, please reach out on Signal at nancyjiang[dot]60. You can also find me on <a href=" https://www.linkedin.com/in/jiang-nancy/"> LinkedIn</a href>. PR pros, thanks, but no thanks!</p>
+		<section class="tab-panel" id="panel-audio" role="tabpanel" aria-labelledby="tab-audio" tabindex="0" hidden>
+			<div class="section-heading"><p class="eyebrow">Listen</p><h2>Audio</h2></div>
+			<div class="audio-list">
+				<article class="audio-item">
+					<div class="audio-copy"><p class="outlet">Craig Newmark Graduate School of Journalism</p><h3>Trump Pardons, Interborough Express, Mamdani Flips the Bronx</h3><p class="clip-note">Executive producer for Craig Newmark's live radio class, taught by NPR reporter-trainer George Bodarky.</p></div>
+					<iframe title="SoundCloud player for Trump Pardons, Interborough Express, Mamdani Flips the Bronx, November 10, 2025" width="100%" height="400" scrolling="no" frameborder="0" loading="lazy" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2217759581&amp;show_artwork=true"></iframe>
+				</article>
+				<article class="audio-item">
+					<div class="audio-copy"><p class="outlet">Audio report</p><h3>Rideshare Drivers Rally for Protections Against Firings Without Cause</h3></div>
+					<iframe title="SoundCloud player for Rideshare Drivers Rally for Protections Against Firings Without Cause" width="100%" height="400" scrolling="no" frameborder="0" loading="lazy" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2217754811&amp;show_artwork=true"></iframe>
+				</article>
+				<article class="audio-item">
+					<div class="audio-copy"><p class="outlet">Audio report</p><h3>Mahjong's Revival: Green Tile Social Club</h3></div>
+					<iframe title="SoundCloud player for Mahjong's Revival: Green Tile Social Club" width="100%" height="400" scrolling="no" frameborder="0" loading="lazy" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2217751403&amp;show_artwork=true"></iframe>
+			</div>
+		</section>
 
-	<figure>
-	<img src= "images/nancy.jpg" alt="Nancy Jiang takes a photo on her film camera." width=1000px>
-	</figure> 
+		<section class="tab-panel" id="panel-video" role="tabpanel" aria-labelledby="tab-video" tabindex="0" hidden>
+			<div class="section-heading"><p class="eyebrow">Watch</p><h2>Video</h2></div>
+			<div class="video-list">
+				<article class="video-item">
+					<p class="outlet">The City Reporter</p>
+					<h3><a href="https://www.instagram.com/reel/DZvJC2Bx41t/" target="_blank" rel="noopener noreferrer">Williamsburg Music Center</a></h3>
+					<iframe title="Instagram Reel: Williamsburg Music Center" src="https://www.instagram.com/reel/DZvJC2Bx41t/embed/" loading="lazy" allowfullscreen></iframe>
+				</article>
+				<article class="video-item">
+					<p class="outlet">Vertical Reel</p>
+					<h3>Starbucks Workers Go on Strike</h3>
+					<video class="video-player" controls playsinline preload="metadata" aria-label="Starbucks Workers Go on Strike">
+						<source src="videos/starbucks-strike-540p.mp4" type="video/mp4">
+						<a href="videos/starbucks-strike-540p.mp4">Download the video</a>
+					</video>
+				</article>
+			</div>
+		</section>
+	</main>
 
-	<div>
-		<p>© 2025 Nancy Jiang </p>
-	</div>
+	<footer class="footer">
+		<p>For tips, reach me on Signal at nancyjiang[dot]60. PR pros, please do not add me to any mailing or distribution lists.</p>
+		<p class="copyright">© 2026 Nancy Jiang</p>
+	</footer>
+	<script>
+		const tabs = [...document.querySelectorAll('[role="tab"]')];
 
-</div>
+	function selectTab(selectedTab, moveFocus = false) {
+		tabs.forEach((tab) => {
+			const selected = tab === selectedTab;
+			tab.setAttribute('aria-selected', String(selected));
+			tab.tabIndex = selected ? 0 : -1;
+			document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
+		});
 
+		if (moveFocus) selectedTab.focus();
+	}
+
+	tabs.forEach((tab, index) => {
+		tab.addEventListener('click', () => selectTab(tab));
+		tab.addEventListener('keydown', (event) => {
+			let nextIndex;
+			if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+			if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+			if (event.key === 'Home') nextIndex = 0;
+			if (event.key === 'End') nextIndex = tabs.length - 1;
+			if (nextIndex === undefined) return;
+			event.preventDefault();
+			selectTab(tabs[nextIndex], true);
+		});
+	});
+
+	const portraitToggle = document.querySelector('.portrait-toggle');
+	portraitToggle.addEventListener('click', () => {
+		const showHeadshot = portraitToggle.getAttribute('aria-pressed') !== 'true';
+		portraitToggle.setAttribute('aria-pressed', String(showHeadshot));
+	});
+	</script>
 </body>
 </html>
